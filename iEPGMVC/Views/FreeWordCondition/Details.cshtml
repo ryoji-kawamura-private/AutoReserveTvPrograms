@@ -1,0 +1,22 @@
+﻿@model iEPG.Entity.FreeWordConditon
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>FreeWordConditon</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FreeWord)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FreeWord)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

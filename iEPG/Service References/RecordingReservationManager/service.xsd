@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/RK" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="GetSetting">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSettingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSettingResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SchemaRecordingReservation.M_SETTINGDataTable" Namespace="http://schemas.datacontract.org/2004/07/RK" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+                </ActualType>
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+            <xs:attribute fixed="" name="namespace" />
+            <xs:attribute fixed="M_SETTINGDataTable" name="tableTypeName" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSettings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="settingTable" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SchemaRecordingReservation.M_SETTINGDataTable" Namespace="http://schemas.datacontract.org/2004/07/RK" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+                </ActualType>
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+            <xs:attribute fixed="" name="namespace" />
+            <xs:attribute fixed="M_SETTINGDataTable" name="tableTypeName" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="terrestrialDevice" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SchemaRecordingReservation.M_DEVICEDataTable" Namespace="http://schemas.datacontract.org/2004/07/RK" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+                </ActualType>
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+            <xs:attribute fixed="" name="namespace" />
+            <xs:attribute fixed="M_DEVICEDataTable" name="tableTypeName" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="bS110CSDevice" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SchemaRecordingReservation.M_DEVICEDataTable" Namespace="http://schemas.datacontract.org/2004/07/RK" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+                </ActualType>
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+            <xs:attribute fixed="" name="namespace" />
+            <xs:attribute fixed="M_DEVICEDataTable" name="tableTypeName" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSettingsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="settingTable" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SchemaRecordingReservation.M_SETTINGDataTable" Namespace="http://schemas.datacontract.org/2004/07/RK" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+                </ActualType>
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+            <xs:attribute fixed="" name="namespace" />
+            <xs:attribute fixed="M_SETTINGDataTable" name="tableTypeName" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="terrestrialDevice" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SchemaRecordingReservation.M_DEVICEDataTable" Namespace="http://schemas.datacontract.org/2004/07/RK" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+                </ActualType>
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+            <xs:attribute fixed="" name="namespace" />
+            <xs:attribute fixed="M_DEVICEDataTable" name="tableTypeName" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="bS110CSDevice" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SchemaRecordingReservation.M_DEVICEDataTable" Namespace="http://schemas.datacontract.org/2004/07/RK" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+                </ActualType>
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+            <xs:attribute fixed="" name="namespace" />
+            <xs:attribute fixed="M_DEVICEDataTable" name="tableTypeName" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReservation">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReservationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetReservationResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SchemaRecordingReservation.T_RESERVATIONDataTable" Namespace="http://schemas.datacontract.org/2004/07/RK" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+                </ActualType>
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+            <xs:attribute fixed="" name="namespace" />
+            <xs:attribute fixed="T_RESERVATIONDataTable" name="tableTypeName" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRecordedList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRecordedListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetRecordedListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SchemaRecordingReservation.T_RESERVATIONDataTable" Namespace="http://schemas.datacontract.org/2004/07/RK" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+                </ActualType>
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+            <xs:attribute fixed="" name="namespace" />
+            <xs:attribute fixed="T_RESERVATIONDataTable" name="tableTypeName" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/RK" minOccurs="0" name="reservationRowSerializer" nillable="true" type="q1:T_RESERVATIONRowSerializer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLogResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SchemaRecordingReservation.T_LOGDataTable" Namespace="http://schemas.datacontract.org/2004/07/RK" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+                </ActualType>
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+            <xs:attribute fixed="" name="namespace" />
+            <xs:attribute fixed="T_LOGDataTable" name="tableTypeName" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetRecordingReservation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/RK" minOccurs="0" name="reservationRowSerializer" nillable="true" type="q2:T_RESERVATIONRowSerializer" />
+        <xs:element minOccurs="0" name="force" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetRecordingReservationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/RK" minOccurs="0" name="SetRecordingReservationResult" nillable="true" type="q3:Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRecordingReservation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/RK" minOccurs="0" name="reservationRowSerializer" nillable="true" type="q4:T_RESERVATIONRowSerializer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRecordingReservationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/RK" minOccurs="0" name="UpdateRecordingReservationResult" nillable="true" type="q5:Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteRecordingReservation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="reservationTable" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SchemaRecordingReservation.T_RESERVATIONDataTable" Namespace="http://schemas.datacontract.org/2004/07/RK" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+                </ActualType>
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+            <xs:attribute fixed="" name="namespace" />
+            <xs:attribute fixed="T_RESERVATIONDataTable" name="tableTypeName" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteRecordingReservationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/RK" minOccurs="0" name="DeleteRecordingReservationResult" nillable="true" type="q6:Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/RK" minOccurs="0" name="DeleteLogResult" nillable="true" type="q7:Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStationList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStationListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetStationListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SchemaRecordingReservation.M_STATIONDataTable" Namespace="http://schemas.datacontract.org/2004/07/RK" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+                </ActualType>
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+            <xs:attribute fixed="" name="namespace" />
+            <xs:attribute fixed="M_STATIONDataTable" name="tableTypeName" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertStation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/RK" minOccurs="0" name="stationRowSerializer" nillable="true" type="q8:M_STATIONRowSerializer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertStationResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateStation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="stationList" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SchemaRecordingReservation.M_STATIONDataTable" Namespace="http://schemas.datacontract.org/2004/07/RK" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+                </ActualType>
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+            <xs:attribute fixed="" name="namespace" />
+            <xs:attribute fixed="M_STATIONDataTable" name="tableTypeName" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateStationResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSetting">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/RK" minOccurs="0" name="settingRowSerializer" nillable="true" type="q9:M_SETTINGRowSerializer" />
+        <xs:element minOccurs="0" name="terrestrialDevice" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SchemaRecordingReservation.M_DEVICEDataTable" Namespace="http://schemas.datacontract.org/2004/07/RK" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+                </ActualType>
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+            <xs:attribute fixed="" name="namespace" />
+            <xs:attribute fixed="M_DEVICEDataTable" name="tableTypeName" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="bS110CSDevice" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="SchemaRecordingReservation.M_DEVICEDataTable" Namespace="http://schemas.datacontract.org/2004/07/RK" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+                </ActualType>
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+            <xs:attribute fixed="" name="namespace" />
+            <xs:attribute fixed="M_DEVICEDataTable" name="tableTypeName" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSettingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/RK" minOccurs="0" name="UpdateSettingResult" nillable="true" type="q10:Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDllNames">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tvTestFileFullPath" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDllNamesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetDllNamesResult" nillable="true" type="q11:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

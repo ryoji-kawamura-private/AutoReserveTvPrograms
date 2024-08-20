@@ -1,0 +1,160 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iEPG", "iEPG\iEPG.csproj", "{F1DEF84D-700C-4291-864C-D065F2FCE419}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoReserveTvPrograms", "AutoReserveTvPrograms\AutoReserveTvPrograms.csproj", "{8B94DB77-34F9-4621-A81A-92B60DC2CF21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewTvProgram", "ViewTvProgram\ViewTvProgram.csproj", "{11A6DF30-951F-45EF-A10C-25160DB767D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iEPGService", "iEPGService\iEPGService.csproj", "{1C1F8A15-CA8B-4963-8548-722C5DD987FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dlls", "Dlls", "{A5149DFB-747A-4A06-96E5-2CD982139895}"
+	ProjectSection(SolutionItems) = preProject
+		Dlls\HtmlAgilityPack.dll = Dlls\HtmlAgilityPack.dll
+		Dlls\RecordingReservationManagerInterface.dll = Dlls\RecordingReservationManagerInterface.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iEPGMVC", "iEPGMVC\iEPGMVC.csproj", "{5819F400-8D18-4860-AADF-56EEB4C8C548}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{CBBAB9E9-27EC-4DDB-8F79-5106DA79F3B6}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1DEF84D-700C-4291-864C-D065F2FCE419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1DEF84D-700C-4291-864C-D065F2FCE419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1DEF84D-700C-4291-864C-D065F2FCE419}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{F1DEF84D-700C-4291-864C-D065F2FCE419}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F1DEF84D-700C-4291-864C-D065F2FCE419}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F1DEF84D-700C-4291-864C-D065F2FCE419}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F1DEF84D-700C-4291-864C-D065F2FCE419}.Debug|x86.ActiveCfg = Debug|x86
+		{F1DEF84D-700C-4291-864C-D065F2FCE419}.Debug|x86.Build.0 = Debug|x86
+		{F1DEF84D-700C-4291-864C-D065F2FCE419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1DEF84D-700C-4291-864C-D065F2FCE419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1DEF84D-700C-4291-864C-D065F2FCE419}.Release|ARM.ActiveCfg = Release|Any CPU
+		{F1DEF84D-700C-4291-864C-D065F2FCE419}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F1DEF84D-700C-4291-864C-D065F2FCE419}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F1DEF84D-700C-4291-864C-D065F2FCE419}.Release|x64.ActiveCfg = Release|x64
+		{F1DEF84D-700C-4291-864C-D065F2FCE419}.Release|x64.Build.0 = Release|x64
+		{F1DEF84D-700C-4291-864C-D065F2FCE419}.Release|x86.ActiveCfg = Release|Any CPU
+		{8B94DB77-34F9-4621-A81A-92B60DC2CF21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B94DB77-34F9-4621-A81A-92B60DC2CF21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B94DB77-34F9-4621-A81A-92B60DC2CF21}.Debug|ARM.ActiveCfg = Debug|x86
+		{8B94DB77-34F9-4621-A81A-92B60DC2CF21}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{8B94DB77-34F9-4621-A81A-92B60DC2CF21}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{8B94DB77-34F9-4621-A81A-92B60DC2CF21}.Debug|x64.ActiveCfg = Debug|x86
+		{8B94DB77-34F9-4621-A81A-92B60DC2CF21}.Debug|x86.ActiveCfg = Debug|x86
+		{8B94DB77-34F9-4621-A81A-92B60DC2CF21}.Debug|x86.Build.0 = Debug|x86
+		{8B94DB77-34F9-4621-A81A-92B60DC2CF21}.Release|Any CPU.ActiveCfg = Release|x86
+		{8B94DB77-34F9-4621-A81A-92B60DC2CF21}.Release|ARM.ActiveCfg = Release|x86
+		{8B94DB77-34F9-4621-A81A-92B60DC2CF21}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{8B94DB77-34F9-4621-A81A-92B60DC2CF21}.Release|Mixed Platforms.Build.0 = Release|x86
+		{8B94DB77-34F9-4621-A81A-92B60DC2CF21}.Release|x64.ActiveCfg = Release|x64
+		{8B94DB77-34F9-4621-A81A-92B60DC2CF21}.Release|x64.Build.0 = Release|x64
+		{8B94DB77-34F9-4621-A81A-92B60DC2CF21}.Release|x86.ActiveCfg = Release|x86
+		{8B94DB77-34F9-4621-A81A-92B60DC2CF21}.Release|x86.Build.0 = Release|x86
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Debug|ARM.ActiveCfg = Debug|ARM
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Debug|ARM.Build.0 = Debug|ARM
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Debug|ARM.Deploy.0 = Debug|ARM
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Debug|Mixed Platforms.Deploy.0 = Debug|Any CPU
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Debug|x64.ActiveCfg = Debug|x64
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Debug|x64.Build.0 = Debug|x64
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Debug|x64.Deploy.0 = Debug|x64
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Debug|x86.ActiveCfg = Debug|x86
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Debug|x86.Build.0 = Debug|x86
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Debug|x86.Deploy.0 = Debug|x86
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Release|ARM.ActiveCfg = Release|ARM
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Release|ARM.Build.0 = Release|ARM
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Release|ARM.Deploy.0 = Release|ARM
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Release|Mixed Platforms.Build.0 = Release|x86
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Release|Mixed Platforms.Deploy.0 = Release|x86
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Release|x64.ActiveCfg = Release|x64
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Release|x64.Build.0 = Release|x64
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Release|x64.Deploy.0 = Release|x64
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Release|x86.ActiveCfg = Release|x86
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Release|x86.Build.0 = Release|x86
+		{11A6DF30-951F-45EF-A10C-25160DB767D2}.Release|x86.Deploy.0 = Release|x86
+		{1C1F8A15-CA8B-4963-8548-722C5DD987FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C1F8A15-CA8B-4963-8548-722C5DD987FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C1F8A15-CA8B-4963-8548-722C5DD987FC}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{1C1F8A15-CA8B-4963-8548-722C5DD987FC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1C1F8A15-CA8B-4963-8548-722C5DD987FC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1C1F8A15-CA8B-4963-8548-722C5DD987FC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1C1F8A15-CA8B-4963-8548-722C5DD987FC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1C1F8A15-CA8B-4963-8548-722C5DD987FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C1F8A15-CA8B-4963-8548-722C5DD987FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C1F8A15-CA8B-4963-8548-722C5DD987FC}.Release|ARM.ActiveCfg = Release|Any CPU
+		{1C1F8A15-CA8B-4963-8548-722C5DD987FC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1C1F8A15-CA8B-4963-8548-722C5DD987FC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1C1F8A15-CA8B-4963-8548-722C5DD987FC}.Release|x64.ActiveCfg = Release|Any CPU
+		{1C1F8A15-CA8B-4963-8548-722C5DD987FC}.Release|x86.ActiveCfg = Release|Any CPU
+		{5819F400-8D18-4860-AADF-56EEB4C8C548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5819F400-8D18-4860-AADF-56EEB4C8C548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5819F400-8D18-4860-AADF-56EEB4C8C548}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{5819F400-8D18-4860-AADF-56EEB4C8C548}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5819F400-8D18-4860-AADF-56EEB4C8C548}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5819F400-8D18-4860-AADF-56EEB4C8C548}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5819F400-8D18-4860-AADF-56EEB4C8C548}.Debug|x86.ActiveCfg = Debug|x86
+		{5819F400-8D18-4860-AADF-56EEB4C8C548}.Debug|x86.Build.0 = Debug|x86
+		{5819F400-8D18-4860-AADF-56EEB4C8C548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5819F400-8D18-4860-AADF-56EEB4C8C548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5819F400-8D18-4860-AADF-56EEB4C8C548}.Release|ARM.ActiveCfg = Release|Any CPU
+		{5819F400-8D18-4860-AADF-56EEB4C8C548}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5819F400-8D18-4860-AADF-56EEB4C8C548}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5819F400-8D18-4860-AADF-56EEB4C8C548}.Release|x64.ActiveCfg = Release|x64
+		{5819F400-8D18-4860-AADF-56EEB4C8C548}.Release|x64.Build.0 = Release|x64
+		{5819F400-8D18-4860-AADF-56EEB4C8C548}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://ryoji-vpn:8089/tfs/kawamura
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AutoReserveTvPrograms\\AutoReserveTvPrograms.csproj
+		SccProjectName1 = AutoReserveTvPrograms
+		SccLocalPath1 = AutoReserveTvPrograms
+		SccProjectUniqueName2 = iEPG\\iEPG.csproj
+		SccProjectName2 = iEPG
+		SccLocalPath2 = iEPG
+		SccProjectUniqueName3 = iEPGService\\iEPGService.csproj
+		SccProjectName3 = iEPGService
+		SccLocalPath3 = iEPGService
+		SccProjectUniqueName4 = ViewTvProgram\\ViewTvProgram.csproj
+		SccProjectName4 = ViewTvProgram
+		SccLocalPath4 = ViewTvProgram
+		SccProjectUniqueName5 = iEPGMVC\\iEPGMVC.csproj
+		SccProjectName5 = iEPGMVC
+		SccLocalPath5 = iEPGMVC
+	EndGlobalSection
+EndGlobal

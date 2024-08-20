@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/iEPG.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/iEPG.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfTvProgram">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TvProgram" nillable="true" type="tns:TvProgram" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTvProgram" nillable="true" type="tns:ArrayOfTvProgram" />
+  <xs:complexType name="TvProgram">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:TvProgramBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ReserveStatus" type="xs:unsignedByte" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TvProgram" nillable="true" type="tns:TvProgram" />
+  <xs:complexType name="TvProgramBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Attribute1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ComponentAudio1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ComponentVideo1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContentType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CopyControl1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Detail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EndDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Genre1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Genre2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Performer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProgramId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProgramSubTitle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProgramTitle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Station" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StationName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubGenre1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubGenre2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Timestamp" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="Version" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TvProgramBase" nillable="true" type="tns:TvProgramBase" />
+</xs:schema>

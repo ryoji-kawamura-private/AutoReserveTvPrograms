@@ -1,0 +1,67 @@
+﻿@model iEPGMVC.Models.ReserveTvProgramsModel
+@{
+	ViewBag.Title = "Reserve";
+}
+
+<h2>Reserve</h2>
+@using (Html.BeginForm("Search", "TvPrograms"))
+{
+	@Html.ValidationSummary(true)
+
+	<fieldset>
+		<legend>FreeWordConditon</legend>
+
+		<div class="editor-label">
+			@Html.LabelFor(model => model.SearchWord)
+		</div>
+		<div class="editor-field">
+			@Html.EditorFor(model => model.SearchWord)
+			@Html.ValidationMessageFor(model => model.SearchWord)
+		</div>
+
+		<p>
+			<input type="submit" value="Search" />
+		</p>
+	</fieldset>
+}
+
+@{
+	if (Model != null && Model.SearchedTvPrograms != null)
+	{
+		using (Html.BeginForm("Reserve", "TvPrograms"))
+		{
+			@Html.AntiForgeryToken()
+			@Html.ValidationSummary(true)
+			@Html.HiddenFor(modelItem => Model.SearchWord)
+
+			<table>
+				@for (var i = 0; i < Model.SearchedTvPrograms.Count(); i++)
+				{
+					<tr>
+						<td>
+							@Html.CheckBoxFor(modelItem => Model.SearchedTvPrograms[i].Selected)
+							@Html.HiddenFor(modelItem => Model.SearchedTvPrograms[i].Station)
+							@Html.HiddenFor(modelItem => Model.SearchedTvPrograms[i].Id)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => Model.SearchedTvPrograms[i].ProgramTitle)
+							@Html.HiddenFor(modelItem => Model.SearchedTvPrograms[i].ProgramTitle)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => Model.SearchedTvPrograms[i].StartDateTime)
+							@Html.HiddenFor(modelItem => Model.SearchedTvPrograms[i].StartDateTime)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => Model.SearchedTvPrograms[i].EndDateTime)
+							@Html.HiddenFor(modelItem => Model.SearchedTvPrograms[i].EndDateTime)
+						</td>
+					</tr>
+				}
+
+			</table>
+			<p>
+				<input type="submit" value="Reserve" />
+			</p>
+		}
+	}
+}

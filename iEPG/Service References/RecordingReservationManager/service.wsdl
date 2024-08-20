@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="RecordingReservationManager" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_IRecordingReservationManager_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1">
+        </msb:BinaryEncoding>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256>
+                </sp:Basic256>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict>
+                </sp:Strict>
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing>
+        </wsaw:UsingAddressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/RK" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IRecordingReservationManager_GetSetting_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSetting" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_GetSetting_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSettingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_GetSettings_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSettings" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_GetSettings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSettingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_GetReservation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReservation" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_GetReservation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReservationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_GetRecordedList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRecordedList" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_GetRecordedList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRecordedListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_GetLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLog" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_GetLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_SetRecordingReservation_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetRecordingReservation" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_SetRecordingReservation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetRecordingReservationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_UpdateRecordingReservation_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRecordingReservation" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_UpdateRecordingReservation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRecordingReservationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_DeleteRecordingReservation_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRecordingReservation" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_DeleteRecordingReservation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRecordingReservationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_DeleteLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLog" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_DeleteLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_GetStationList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStationList" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_GetStationList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStationListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_InsertStation_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertStation" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_InsertStation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertStationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_UpdateStation_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStation" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_UpdateStation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_UpdateSetting_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSetting" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_UpdateSetting_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSettingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_GetDllNames_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDllNames" />
+  </wsdl:message>
+  <wsdl:message name="IRecordingReservationManager_GetDllNames_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDllNamesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IRecordingReservationManager">
+    <wsdl:operation name="GetSetting">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecordingReservationManager/GetSetting" message="tns:IRecordingReservationManager_GetSetting_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecordingReservationManager/GetSettingResponse" message="tns:IRecordingReservationManager_GetSetting_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSettings">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecordingReservationManager/GetSettings" message="tns:IRecordingReservationManager_GetSettings_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecordingReservationManager/GetSettingsResponse" message="tns:IRecordingReservationManager_GetSettings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReservation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecordingReservationManager/GetReservation" message="tns:IRecordingReservationManager_GetReservation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecordingReservationManager/GetReservationResponse" message="tns:IRecordingReservationManager_GetReservation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRecordedList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecordingReservationManager/GetRecordedList" message="tns:IRecordingReservationManager_GetRecordedList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecordingReservationManager/GetRecordedListResponse" message="tns:IRecordingReservationManager_GetRecordedList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecordingReservationManager/GetLog" message="tns:IRecordingReservationManager_GetLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecordingReservationManager/GetLogResponse" message="tns:IRecordingReservationManager_GetLog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetRecordingReservation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecordingReservationManager/SetRecordingReservation" message="tns:IRecordingReservationManager_SetRecordingReservation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecordingReservationManager/SetRecordingReservationResponse" message="tns:IRecordingReservationManager_SetRecordingReservation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRecordingReservation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecordingReservationManager/UpdateRecordingReservation" message="tns:IRecordingReservationManager_UpdateRecordingReservation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecordingReservationManager/UpdateRecordingReservationResponse" message="tns:IRecordingReservationManager_UpdateRecordingReservation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRecordingReservation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecordingReservationManager/DeleteRecordingReservation" message="tns:IRecordingReservationManager_DeleteRecordingReservation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecordingReservationManager/DeleteRecordingReservationResponse" message="tns:IRecordingReservationManager_DeleteRecordingReservation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecordingReservationManager/DeleteLog" message="tns:IRecordingReservationManager_DeleteLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecordingReservationManager/DeleteLogResponse" message="tns:IRecordingReservationManager_DeleteLog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStationList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecordingReservationManager/GetStationList" message="tns:IRecordingReservationManager_GetStationList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecordingReservationManager/GetStationListResponse" message="tns:IRecordingReservationManager_GetStationList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertStation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecordingReservationManager/InsertStation" message="tns:IRecordingReservationManager_InsertStation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecordingReservationManager/InsertStationResponse" message="tns:IRecordingReservationManager_InsertStation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecordingReservationManager/UpdateStation" message="tns:IRecordingReservationManager_UpdateStation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecordingReservationManager/UpdateStationResponse" message="tns:IRecordingReservationManager_UpdateStation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSetting">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecordingReservationManager/UpdateSetting" message="tns:IRecordingReservationManager_UpdateSetting_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecordingReservationManager/UpdateSettingResponse" message="tns:IRecordingReservationManager_UpdateSetting_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDllNames">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRecordingReservationManager/GetDllNames" message="tns:IRecordingReservationManager_GetDllNames_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRecordingReservationManager/GetDllNamesResponse" message="tns:IRecordingReservationManager_GetDllNames_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NetTcpBinding_IRecordingReservationManager" type="tns:IRecordingReservationManager">
+    <wsp:PolicyReference URI="#NetTcpBinding_IRecordingReservationManager_policy">
+    </wsp:PolicyReference>
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="GetSetting">
+      <soap12:operation soapAction="http://tempuri.org/IRecordingReservationManager/GetSetting" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSettings">
+      <soap12:operation soapAction="http://tempuri.org/IRecordingReservationManager/GetSettings" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReservation">
+      <soap12:operation soapAction="http://tempuri.org/IRecordingReservationManager/GetReservation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecordedList">
+      <soap12:operation soapAction="http://tempuri.org/IRecordingReservationManager/GetRecordedList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLog">
+      <soap12:operation soapAction="http://tempuri.org/IRecordingReservationManager/GetLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetRecordingReservation">
+      <soap12:operation soapAction="http://tempuri.org/IRecordingReservationManager/SetRecordingReservation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRecordingReservation">
+      <soap12:operation soapAction="http://tempuri.org/IRecordingReservationManager/UpdateRecordingReservation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRecordingReservation">
+      <soap12:operation soapAction="http://tempuri.org/IRecordingReservationManager/DeleteRecordingReservation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteLog">
+      <soap12:operation soapAction="http://tempuri.org/IRecordingReservationManager/DeleteLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStationList">
+      <soap12:operation soapAction="http://tempuri.org/IRecordingReservationManager/GetStationList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertStation">
+      <soap12:operation soapAction="http://tempuri.org/IRecordingReservationManager/InsertStation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStation">
+      <soap12:operation soapAction="http://tempuri.org/IRecordingReservationManager/UpdateStation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSetting">
+      <soap12:operation soapAction="http://tempuri.org/IRecordingReservationManager/UpdateSetting" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDllNames">
+      <soap12:operation soapAction="http://tempuri.org/IRecordingReservationManager/GetDllNames" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RecordingReservationManager">
+    <wsdl:port name="NetTcpBinding_IRecordingReservationManager" binding="tns:NetTcpBinding_IRecordingReservationManager">
+      <soap12:address location="net.tcp://localhost:8081/RecordingReservationManagerServer" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:8081/RecordingReservationManagerServer</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Dns>ryoji-server-r2</Dns>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
